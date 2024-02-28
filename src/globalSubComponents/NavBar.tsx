@@ -34,10 +34,9 @@ const NavBar = () => {
       onMenuOpenChange={() => {
         dispatch(updateNavStatus(!navOpenStatus));
       }}
-      className="h-[5rem] nav z-[200]"
+      className="h-[5rem] nav z-[200] bg-white"
       maxWidth="xl"
       shouldHideOnScroll
-      classNames={{ base: "bg-[rgba(0,0,0,0.4)]" }}
     >
       <NavbarContent>
         <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-white" />
@@ -52,7 +51,6 @@ const NavBar = () => {
           </div>
         </Link>
       </NavbarContent>
-
       <NavbarContent className="hidden lg:flex" justify="center">
         <NavbarItem>
           <Link
@@ -62,16 +60,6 @@ const NavBar = () => {
             HOME
           </Link>
         </NavbarItem>
-
-        <NavbarItem>
-          <Link
-            to="../Services"
-            className={curTab === "Services" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
-          >
-            SERVICES
-          </Link>
-        </NavbarItem>
-
         <NavbarItem>
           <Link
             to="../About"
@@ -85,59 +73,22 @@ const NavBar = () => {
             to="../Contact"
             className={curTab === "Contact" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            CONTACT US
+            Packages
           </Link>
         </NavbarItem>
+      </NavbarContent>{" "}
+      <NavbarContent justify="end">
         <NavbarItem>
-          <Link
-            to="../Pricing"
-            className={curTab === "Pricing" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
-          >
-            PRICING
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            to="../Blog"
-            className={curTab === "Blog" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
-          >
-            BLOG
-          </Link>
+          <ButtonElement
+            to="../Auth"
+            variant="solid"
+            label="Get Started"
+            radius="none"
+            className="w-[8rem] px-[8px] py-[10px] font-semibold bg-[#bc3908] text-white"
+            onClickFunction={() => dispatch(updateToLoginStatus(false))}
+          />
         </NavbarItem>
       </NavbarContent>
-      {isLoggedIn ? (
-        <NavbarContent justify="end">
-          <NavbarItem>
-            <UserAvatar />
-          </NavbarItem>
-        </NavbarContent>
-      ) : (
-        <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex">
-            <ButtonElement
-              to="../Auth"
-              variant="bordered"
-              color="warning"
-              label="Login"
-              radius="full"
-              className="w-full px-[8px] py-[10px]"
-              onClickFunction={() => dispatch(updateToLoginStatus(true))}
-            />
-          </NavbarItem>
-          <NavbarItem>
-            <ButtonElement
-              to="../Auth"
-              variant="solid"
-              color="warning"
-              label="Sign Up"
-              radius="full"
-              className="w-full px-[8px] py-[10px] font-semibold"
-              onClickFunction={() => dispatch(updateToLoginStatus(false))}
-            />
-          </NavbarItem>
-        </NavbarContent>
-      )}
-
       <NavbarMenu className="mt-[1rem] bg-[rgba(0,0,0,0.4)] z-[200]">
         {menuItems.map((item, index) => {
           return (

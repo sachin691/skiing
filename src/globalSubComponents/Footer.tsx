@@ -1,150 +1,83 @@
 // Dependencies
-import { Divider, Image, Button, Listbox, ListboxItem } from "@nextui-org/react";
+import { Button, Divider, Image, Input, Listbox, ListboxItem } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import { SiFacebook } from "react-icons/si";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
-import { FaSquareXTwitter, FaPhone } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaPinterest } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { IoLocation } from "react-icons/io5";
 
 // Local Files
 import "./Footer.css";
 import logo from "../globalAssets/logo.svg";
 
-const contactInfo = [
-  {
-    name: "Phone",
-    value: "+1 (845) 687-3270",
-    icon: <FaPhone />,
-  },
-  {
-    name: "Email",
-    value: "support@hmsfreedom.com",
-    icon: <MdEmail />,
-  },
-  {
-    name: "Address",
-    value: "Unit-544, McCabe Street, Port Charlotte, Florida, USA",
-    icon: <IoLocation />,
-  },
-];
-
 const footerLinks = [
   {
-    type: "Navigation",
+    type: "Company",
     data: [
-      { key: "home", value: "Home", link: "Home", state: {} },
-      { key: "services", value: "Services", link: "Services", state: {} },
-      { key: "about", value: "About", link: "About", state: {} },
-      { key: "contact", value: "Contact", link: "Contact", state: {} },
-      { key: "pricing", value: "Pricing", link: "Pricing", state: {} },
+      { key: "About Us", value: "About Us", link: "", state: {} },
+      { key: "Careers", value: "Careers", link: "", state: {} },
+      { key: "Blog", value: "Blog", link: "", state: {} },
+      { key: "Pricing", value: "Pricing", link: "", state: {} },
     ],
   },
   {
-    type: "Quick Links",
+    type: "Resources",
     data: [
-      { key: "webdev", value: "Website Development", link: "Services/Individual", state: { id: 0 } },
-      { key: "seo", value: "Search Engine Optimization", link: "Services/Individual", state: { id: 1 } },
-      { key: "socialmarketing", value: "Social Media Marketing", link: "Services/Individual", state: { id: 2 } },
-      { key: "webanalytics", value: "Web Analytics", link: "Services/Individual", state: { id: 3 } },
-      { key: "graphicdesign", value: "Graphics Design", link: "Services/Individual", state: { id: 4 } },
+      { key: "Templates", value: "Templates", link: "", state: { id: 0 } },
+      { key: "Tutorials", value: "Tutorials", link: "", state: { id: 1 } },
+      { key: "Free Resources", value: "Free Resources", link: "", state: { id: 2 } },
+      { key: "Contract Templates", value: "Contract Templates", link: "", state: { id: 3 } },
     ],
   },
 ];
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-[6rem] gap-[2rem] text-white footer">
-      <div className="flex gap-[4rem] upperFooter">
-        <div className="max-w-[20rem] flex flex-col gap-[2rem] companySection">
+    <div className="flex flex-col justify-center items-center py-[6rem] gap-[2rem] text-black bg-white">
+      <div className="flex upperFooter justify-evenly sm:w-[70%]">
+        <div className="max-w-[20rem] flex flex-col gap-[2rem] companySection md:mr-[8rem]">
           <Image width={150} src={logo} alt="logo" className="bg-white p-[1rem]" />
-          <p className="text-justify text-sm">
-            Kreative Machinez is a unit of <span className="font-bold">HMS Freedom LLC</span>, we're a lively digital
-            marketing agency that's all about crafting innovative solutions for businesses like yours, helping you build
-            a robust online presence that truly stands out. Driven by a ferocious hunger to create tangible impact for
-            your brands, we work with in-house specialists, industry partners and technology leaders to push the
-            boundaries of creativity and put your brand ahead of the competition.
-          </p>
 
-          <Link to='/Privacy' className="text-blue-400">Privacy & Policy</Link>
-          <div className="flex text-[1.8rem] gap-[1rem]">
-            <a href="https://www.facebook.com/profile.php?id=61554936182745" target="_blank" rel="noreferrer">
-              <SiFacebook className="mt-[0.4rem] cursor-pointer hover:scale-105" />
-            </a>
-            <a href="https://twitter.com/Kreativemachinz" target="_blank" rel="noreferrer">
-              <FaSquareXTwitter className="mt-[0.4rem] cursor-pointer hover:scale-105" />
-            </a>
-            <a href="https://www.youtube.com/@KreativeMachinez-23" target="_blank" rel="noreferrer">
-              <TbBrandYoutubeFilled className="mt-[0.4rem] cursor-pointer hover:scale-105" />
-            </a>
-            <a href="https://www.instagram.com/kreativemachinez23/" target="_blank" rel="noreferrer">
-              <AiFillInstagram className="mt-[0.4rem] cursor-pointer hover:scale-105" />
-            </a>
-            <a href="https://www.pinterest.com/KreativeMachinez23/" target="_blank" rel="noreferrer">
-              <FaPinterest className="mt-[0.4rem] cursor-pointer hover:scale-105" />
-            </a>
-          </div>
+          <Link to="/Privacy" className="text-[#bc3908]">
+            Privacy & Policy
+          </Link>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-[1.2rem]">
-          <div className="flex gap-[2rem] w-full justify-between contactInfo">
-            {contactInfo.map((data, index) => (
-              <div key={index} className="flex items-center  gap-[1rem]">
-                <Button isIconOnly variant="solid" radius="full" className="w-[3rem] h-[3rem] text-[1.5rem]">
-                  {data.icon}
-                </Button>
-                <div className="font-['poppins']">
-                  <h1 className="text-[#F5A524] font-bold text-[1.2rem]">{data.name}</h1>
-                  <p className="text-sm max-w-[15rem]">{data.value}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="w-[100%] upperDivider">
-            <Divider className="dark" />
-            <Divider className="dark" />
-          </div>
-
-          <div className="flex justify-between w-full footerLinks">
-            {footerLinks.map((ele, index) => (
-              <div key={index} className="flex flex-col gap-[1rem]">
-                <p className="font-['poppins'] text-[#F5A524] font-bold text-[1.1rem]">{ele.type}</p>
-                <Listbox items={ele.data} aria-label="navigation" className="dark" variant="light">
-                  {(item) => (
-                    <ListboxItem key={item.key} className="px-[0]" textValue={item.key}>
-                      <Link to={`../${item.link}`} state={item.state}>
-                        {item.value}
-                      </Link>
-                    </ListboxItem>
-                  )}
-                </Listbox>
-              </div>
-            ))}
-
-            <div className="flex flex-col gap-[1rem] max-w-[13rem]">
-              <p className="font-['poppins'] text-[#F5A524] font-bold text-[1.1rem]">Work Hours</p>
-              <p className="text-justify text-sm">
-                Feel free to reach out to us during our working hours for all your digital marketing needs. We're here
-                to elevate your online presence and drive success for your business.
-              </p>
-              <ul className="text-sm">
-                <li>Mon - Fri : 09:00 - 18:00 (GMT)</li>
-                <li>Sat: 10:00 - 16:00 (GMT)</li>
-              </ul>
+        <div className="flex justify-between w-full footerLinks gap-[2rem] mt-[3rem] ">
+          {footerLinks.map((ele, index) => (
+            <div key={index} className="flex flex-col gap-[1rem]">
+              <p className="font-['poppins'] text-[#bc3908] font-bold text-[1.1rem]">{ele.type}</p>
+              <Listbox items={ele.data} aria-label="navigation" className="dark" variant="light">
+                {(item) => (
+                  <ListboxItem key={item.key} className="px-[0]" textValue={item.key}>
+                    <Link to={`../${item.link}`} state={item.state}>
+                      {item.value}
+                    </Link>
+                  </ListboxItem>
+                )}
+              </Listbox>
             </div>
+          ))}
+          <div className="flex flex-col gap-[1rem] max-w-[20rem]">
+            <h1 className="font-['poppins'] text-[#bc3908] font-bold text-[1.1rem]">Join Our Newsletter</h1>
+            <div className="flex flex-row gap-x-2">
+              <Input placeholder="Your email" size="sm" radius="none" className="h-[4rem]" />
+              <Button className="bg-[#bc3908] text-white h-[2.95rem]" radius="none">
+                Subscribe
+              </Button>
+            </div>
+            <p>*Will send you weekly updates for your better finance management</p>
           </div>
         </div>
       </div>
       <div className="w-[100%]">
-        <Divider className="dark" />
-        <Divider className="dark" />
-        <Divider className="dark" />
+        <Divider className="" />
+        <Divider className="" />
+        <Divider className="" />
       </div>
 
-      <p>© 2023 Kreative Machinez • All Rights Reserved</p>
+      <p>© 2024 SKIING • All Rights Reserved</p>
     </div>
   );
 };
