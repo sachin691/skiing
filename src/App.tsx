@@ -26,6 +26,7 @@ import PricingHero from "./globalAssets/Prices.jpg";
 import ServiceHero from "./globalAssets/Services.jpg";
 import PrivacyHero from "./globalAssets/privacy.jpg";
 import PasswordReset from "./components/ForgetPassword/PasswordReset";
+import Robinhood from "./components/Robinhood/Robinhood";
 
 function App() {
   const curTab = useSelector((state: RootState) => state.curTab.value);
@@ -74,7 +75,7 @@ function App() {
   return (
     <>
       <div style={{ backgroundImage: background }} className={className}>
-        {curTab === "Auth" || curTab === "Password Reset" ? null : <NavBar />}
+        {curTab === "Auth" || curTab === "Password Reset" || curTab === "Robinhood" ? null : <NavBar />}
         <Routes>
           <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/Home" element={<Home />} />
@@ -86,6 +87,7 @@ function App() {
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Blog/*" element={<Blog />} />
           <Route path="/Privacy" element={<Privacy />} />
+          <Route path="/Robinhood" element={<Robinhood />} />
           <Route path="/ResetPassword" element={<PasswordReset />} />
           <Route path="*" element={<Navigate to="/Home" />} />
         </Routes>
