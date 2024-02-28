@@ -41,7 +41,13 @@ const Clients = () => {
 
   return (
     <div className="bg-white text-black px-[3rem] py-[5rem] ">
-      <h1 className="text-[3rem] text-center mx-auto mb-[2rem]">Our Partners</h1>
+      <h1 className="font-bold text-black text-5xl text-center pb-[1rem]">
+        Our <span className="text-[#bc3908]">Sponsers</span>
+      </h1>
+      <p className="md:px-[22%] text-center pb-[2rem]">
+        Our sponsors ensure top-notch skiing services. With their support, our efficient team guarantees seamless
+        equipment collection and delivery to fit your schedule.
+      </p>
 
       <Slider {...settings}>
         {clients.map((data, index) => (
