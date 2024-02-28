@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99973c6c.css",
+    "main.js": "/static/js/main.93a077a4.js",
+    "static/media/privacy.jpg": "/static/media/privacy.2d44355576de2ed7a319.jpg",
+    "static/media/Services.jpg": "/static/media/Services.d94f5c37088067b34670.jpg",
+    "static/media/Contact.jpg": "/static/media/Contact.b634ebc4f97a4385e94a.jpg",
+    "static/media/About.jpg": "/static/media/About.fc5206a5264cd57e483d.jpg",
+    "static/media/HomeHero.jpg": "/static/media/HomeHero.d7aa29e01690a59540b6.jpg",
+    "static/media/Prices.jpg": "/static/media/Prices.f4f9fa2dc5a891956edd.jpg",
+    "static/media/logo.svg": "/static/media/logo.dc29f088af103c84f71248dd09c16427.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/icon.svg": "/static/media/icon.dc29f088af103c84f71248dd09c16427.svg",
+    "index.html": "/index.html",
+    "main.99973c6c.css.map": "/static/css/main.99973c6c.css.map",
+    "main.93a077a4.js.map": "/static/js/main.93a077a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99973c6c.css",
+    "static/js/main.93a077a4.js"
+  ]
+}
