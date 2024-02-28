@@ -82,14 +82,14 @@ const Privacy = () => {
           Interpretation and Definitions
         </h1>
         <h1 className="font-['DM_Serif_Display'] text-[1.3rem] font-semibold text-default-800 mt-4">Interpretation</h1>
-        <p className="text-justify text-default-800 text-[0.95rem] sm:text-md  font-['poppins']">
+        <p className="text-justify text-default-800 text-[0.95rem] sm:text-md  font-sans">
           The words of which the initial letter is capitalized have meanings defined under the following conditions. The
           following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
         </p>
         <h1 className="font-['DM_Serif_Display'] text-[1.3rem] font-semibold text-default-800 mt-4 ">Definitions</h1>
         <Accordion>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md  font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md  font-sans"
             aria-label="For the purposes of this Privacy Policy:"
             title="For the purposes of this Privacy Policy:"
             subtitle={<span>Press to expand</span>}
@@ -109,7 +109,7 @@ const Privacy = () => {
         </h1>
         <Accordion className="mt-[1rem]  ">
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="Personal Data"
             subtitle={<span>Press to expand</span>}
           >
@@ -125,7 +125,7 @@ const Privacy = () => {
             ))}
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="Usage Data"
             subtitle={<span>Press to expand</span>}
           >
@@ -149,7 +149,7 @@ const Privacy = () => {
             </p>
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="Tracking Technologies and Cookies "
             subtitle={<span>Press to expand</span>}
           >
@@ -222,7 +222,7 @@ const Privacy = () => {
         </h1>
         <Accordion className="mt-[1rem]  ">
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="The Company may use Personal Data for the following purposes:"
             subtitle={<span>Press to expand</span>}
           >
@@ -233,7 +233,7 @@ const Privacy = () => {
             ))}
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="We may share Your personal information in the following situations:"
             subtitle={<span>Press to expand</span>}
           >
@@ -244,7 +244,7 @@ const Privacy = () => {
             ))}
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title=" Retention of Your Personal Data"
             subtitle={<span>Press to expand</span>}
           >
@@ -259,7 +259,7 @@ const Privacy = () => {
             </p>
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="Transfer of Your Personal Data"
             subtitle={<span>Press to expand</span>}
           >
@@ -278,7 +278,7 @@ const Privacy = () => {
             </p>
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="Delete Your Personal Data"
             subtitle={<span>Press to expand</span>}
           >
@@ -297,7 +297,7 @@ const Privacy = () => {
             </p>
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="Disclosure of Your Personal Data"
             subtitle={<span>Press to expand</span>}
           >
@@ -323,7 +323,7 @@ const Privacy = () => {
             ))}
           </AccordionItem>
           <AccordionItem
-            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-['poppins']"
+            className="text-justify text-default-800 text-[1.2rem] sm:text-md font-sans"
             title="Security of Your Personal Data"
             subtitle={<span>Press to expand</span>}
           >

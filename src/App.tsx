@@ -91,8 +91,6 @@ function App() {
         </Routes>
       </div>
       {curTab === "Auth" || curTab === "Password Reset" ? null : <Footer />}
-      {curTab === "Auth" || curTab === "Password Reset" ? null : <QuickContacts />}
-      {curTab === "Auth" || curTab === "Password Reset" ? null : <ScrollToTop />}
     </>
   );
 }

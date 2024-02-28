@@ -60,7 +60,7 @@ const Support = () => {
               height={400}
               isZoomed
             />
-            <CardFooter className="flex-col font-['poppins'] text-center items-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 bg-[rgba(0,0,0,0.4)]">
+            <CardFooter className="flex-col font-sans text-center items-center before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 bg-[rgba(0,0,0,0.4)]">
               <h1 className="text-default-200 text-xl font-semibold mt-[0.5rem]">{data.heading}</h1>
               <p className="text-xs text-default-200 p-[0.5rem]">{data.caption}</p>
             </CardFooter>

@@ -41,7 +41,7 @@ const Clients = () => {
 
   return (
     <div className="bg-white text-black px-[3rem] py-[5rem] ">
-      <h1 className="font-['lilita_one'] text-[3rem] text-center mx-auto mb-[2rem]">Our Partners</h1>
+      <h1 className="text-[3rem] text-center mx-auto mb-[2rem]">Our Partners</h1>
 
       <Slider {...settings}>
         {clients.map((data, index) => (

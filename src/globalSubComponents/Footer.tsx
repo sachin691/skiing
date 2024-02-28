@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="flex justify-between w-full footerLinks gap-[2rem] mt-[3rem] ">
           {footerLinks.map((ele, index) => (
             <div key={index} className="flex flex-col gap-[1rem]">
-              <p className="font-['poppins'] text-[#bc3908] font-bold text-[1.1rem]">{ele.type}</p>
+              <p className="font-sans text-[#bc3908] font-bold text-[1.1rem]">{ele.type}</p>
               <Listbox items={ele.data} aria-label="navigation" className="dark" variant="light">
                 {(item) => (
                   <ListboxItem key={item.key} className="px-[0]" textValue={item.key}>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           ))}
           <div className="flex flex-col gap-[1rem] max-w-[20rem]">
-            <h1 className="font-['poppins'] text-[#bc3908] font-bold text-[1.1rem]">Join Our Newsletter</h1>
+            <h1 className="font-sans text-[#bc3908] font-bold text-[1.1rem]">Join Our Newsletter</h1>
             <div className="flex flex-row gap-x-2">
               <Input placeholder="Your email" size="sm" radius="none" className="h-[4rem]" />
               <Button className="bg-[#bc3908] text-white h-[2.95rem]" radius="none">
