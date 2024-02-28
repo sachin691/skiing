@@ -8,6 +8,7 @@ import Hero from "./subComponents/Hero";
 import Clients from "./subComponents/Clients";
 import Guides from "./subComponents/Guides";
 import WhyChooseUs from "./subComponents/WhyChooseUs";
+import Project from "./subComponents/Project";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -17,8 +18,9 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Clients />
       <Guides />
+      <Project />
+      <Clients />
       <WhyChooseUs />
     </>
   );

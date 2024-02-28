@@ -5,40 +5,43 @@ const cardContent = [
   {
     title: "Local Knowledge",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo eum accusantium ipsa aspernatur natus aliquid cumque repellat impedit vitae, quas ipsum voluptatem libero maxime odio ad. Voluptates, tempore? Eaque.",
+      "Unlock insider tips and local knowledge on the best skiing spots, hidden gems, and must-try trails. Elevate your experience with personalized recommendations from our experienced team of skiing enthusiasts.",
     linkText: "Learn More",
-    linkUrl: "../",
+    linkUrl:
+      "https://images.unsplash.com/photo-1605540436563-5bca919ae766?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Endless Terrain",
     description:
       "Discover endless terrain and create fully customizable trips tailored to your preferences. Whether it's mountains, forests, or beaches, explore your desired landscapes with ease and comfort.",
     linkText: "Learn More",
-    linkUrl: "../",
+    linkUrl:
+      "https://images.unsplash.com/photo-1516706443377-10e1c05a3346?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Adventure Awaits",
     description:
       "Embark on unforgettable journeys to distant lands and immerse yourself in thrilling experiences. From adrenaline-pumping activities to serene getaways, find your next adventure here.",
     linkText: "Learn More",
-    linkUrl: "../",
+    linkUrl:
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 const Guides = () => {
   return (
-    <div className="flex flex-col text-center items-center justify-center bg-white p-[2rem] px-[5rem] gap-2">
+    <div className="flex flex-col text-center items-center justify-center bg-white px-[3rem]  md:px-[5rem] py-[5rem] gap-2">
       <h1 className="font-bold text-black text-5xl">
         Ski & <span className="text-[#bc3908]">Snowboard</span> Guides
       </h1>
       <p className="md:px-[22%]">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro pariatur natus quis deserunt saepe architecto
-        distinctio laudantium velit? Temporibus, beatae nisi. Neque earum vitae eveniet aut nihil itaque eius numquam!
+        Expert guides for unforgettable ski and snowboard adventures. Discover pristine slopes and exhilarating runs
+        with our experienced team.
       </p>
       <div className="grid md:grid-cols-3 gap-[2rem] mt-[2rem]">
         {cardContent.map((card, index) => (
           <Card key={index} className="">
             <CardHeader>
-              <Image src="https://images.unsplash.com/photo-1585919269458-6259dfe9f21a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+              <Image src={card.linkUrl} />
             </CardHeader>
             <CardBody className="px-[1rem] py-[2rem]">
               <h1 className="font-bold text-xl">{card.title}</h1>

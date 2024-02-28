@@ -39,7 +39,7 @@ const NavBar = () => {
       shouldHideOnScroll
     >
       <NavbarContent>
-        <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-white" />
+        <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-black" />
         <div className="bg-white hidden lg:block">
           <Image width={60} src={icon} alt="logo" radius="none" />
         </div>
@@ -73,7 +73,7 @@ const NavBar = () => {
             to="../Contact"
             className={curTab === "Contact" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            Packages
+            CONTACT
           </Link>
         </NavbarItem>
       </NavbarContent>{" "}

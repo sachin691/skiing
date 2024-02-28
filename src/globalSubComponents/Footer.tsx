@@ -22,12 +22,12 @@ const footerLinks = [
     ],
   },
   {
-    type: "Resources",
+    type: "Services",
     data: [
-      { key: "Templates", value: "Templates", link: "", state: { id: 0 } },
-      { key: "Tutorials", value: "Tutorials", link: "", state: { id: 1 } },
-      { key: "Free Resources", value: "Free Resources", link: "", state: { id: 2 } },
-      { key: "Contract Templates", value: "Contract Templates", link: "", state: { id: 3 } },
+      { key: "Templates", value: "Skiing Guides", link: "", state: { id: 0 } },
+      { key: "Tutorials", value: "Equipments", link: "", state: { id: 1 } },
+      { key: "Free Resources", value: "Trainers", link: "", state: { id: 2 } },
+      { key: "Contract Templates", value: "Hotels", link: "", state: { id: 3 } },
     ],
   },
 ];
@@ -44,7 +44,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex justify-between w-full footerLinks gap-[2rem] mt-[3rem] ">
+        <div className="flex flex-col md:flex-row justify-between w-full footerLinks gap-[2rem] mt-[3rem] ">
           {footerLinks.map((ele, index) => (
             <div key={index} className="flex flex-col gap-[1rem]">
               <p className="font-sans text-[#bc3908] font-bold text-[1.1rem]">{ele.type}</p>

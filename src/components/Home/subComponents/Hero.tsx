@@ -12,9 +12,9 @@ const Hero = () => {
           </h1>
         </div>
         <div className="py-[0.5rem] px-[2rem] ">
-          <p className="text-gray-800 font-sans text-start">
-            We always ensure the quality of Laundary Service. Our fleet team efficient enough to ensure your schedule
-            collection and delivery
+          <p className="text-white font-sans text-start max-w-[40rem]">
+            Experience Premium Skiing Services with Our Expert Team. From Equipment Rentals to Slope-side Assistance, We
+            Guarantee a Seamless Experience Every Time.
           </p>
         </div>
         <div className="flex flex-row  items-start justify-between gap-2 py-[1rem] px-[2rem] ">

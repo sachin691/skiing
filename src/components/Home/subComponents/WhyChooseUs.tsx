@@ -4,17 +4,18 @@ import "./Home.css";
 
 const WhyChooseUs = () => {
   return (
-    <div className="md:h-[35rem] h-auto w-auto bg-[#edede9] flex md:flex-row flex-col items-center justify-evenly">
+    <div className="md:h-[35rem] h-auto w-auto bg-[#edede9] flex md:flex-row flex-col items-center justify-evenly py-[5rem]">
       <div className="flex flex-col items-start justify-between md:px-[5rem] px-[2rem]">
         <div className="py-[1rem] px-[2rem]">
           <h1 className="text-black font-sans font-bold md:text-5xl text-3xl text-start">
-            Track Your <span className="text-[#bc3908]">Package</span> On The Best Way Possible
+            Hurry !! <span className="text-[#bc3908]">Book</span> Your Spot Now .
           </h1>
         </div>
         <div className="py-[0.5rem] px-[2rem] ">
-          <p className="text-gray-900 font-sans text-start">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ipsam id odit recusandae, at iusto
-            deleniti. Aut nostrum dicta illum at velit quos, assumenda sunt aperiam dolore. Inventore, itaque explicabo?
+          <p className="text-gray-900 font-sans text-start max-w-[90rem]">
+            Don't miss out on the ultimate skiing adventure! Secure your spot now and embark on an unforgettable journey
+            through snow-covered mountains and breathtaking landscapes. Whether you're a beginner or an expert, reserve
+            your spot today for an experience of a lifetime!
           </p>
         </div>
       </div>
